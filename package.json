@@ -1,0 +1,23 @@
+{
+  "name": "CS20",
+  "version": "0.0.1",
+  "description": "We love CS 20",
+  "main": "index.js",
+  "authors": {
+    "name": "HASAN",
+    "email": ""
+  },
+  "repository": "/CS 20",
+  "scripts": {
+    "dev": "vuepress dev src",
+    "build": "vuepress build src"
+  },
+  "license": "MIT",
+  "devDependencies": {
+    "vuepress": "^1.5.3"
+  },
+  "dependencies": {
+    "bootstrap": "^5.0.0-alpha2",
+    "popper.js": "^1.16.1"
+  }
+}
