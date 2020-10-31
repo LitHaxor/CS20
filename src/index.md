@@ -1,7 +1,7 @@
 ---
 home: true
 heroText: 
-heroImage: c.png
+heroImage: C.png
 actionText: 🎆 Contribute →
 actionLink:  https://github.com/LitHaxor/CS20/
 footer:  CS 20-en (C) 2020
