@@ -98,7 +98,7 @@ Best case: O(1)
 Marging two data structure into one data structure.
 ``` cpp
 MARGE(LA1,SIZE1,LA2,SIZE2, LA3)
-SET i = 1
+SET i = 0
 while( i <= SIZE1 ) 
     LA3[i] = LA1[i]
     i = i + 1

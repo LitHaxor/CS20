@@ -4,6 +4,7 @@
  * https://v1.vuepress.vuejs.org/guide/basic-config.html#app-level-enhancements
  */
 import 'bootstrap/dist/css/bootstrap.css';
+import '@fortawesome/fontawesome-free/css/fontawesome.css';
 export default ({
   Vue, // the version of Vue being used in the VuePress app
   options, // the options for the root Vue instance

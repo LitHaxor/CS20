@@ -1,4 +1,4 @@
-# Array
+# Array 1D
 Array is collection of item stored at contiguous memory locations. Array store multiple items of same type togeather in computer memory.
 ![](https://media.geeksforgeeks.org/wp-content/uploads/array-2.png)
 
@@ -39,3 +39,32 @@ This array took 16 bytes of memory!
 
 ## Array Insertion
 Inserting an element into array.
+``` cpp
+void insert(int arr[], int size, int k, int item)
+{
+    int i=n;
+    size += 1;
+    while( i >= k)
+    {
+        arr[i+1] = arr[i];
+        i--;
+    }
+    arr[k] = item;
+}
+```
+
+::: warning Time complexity
+
+Time complexity of following program is <br>
+**Best case:** O(1) // inserting from the last <br>
+**Worst case:** O(N) 
+:::
+
+## Array deletion
+deleting element from the array.
+
+``` cpp
+void Delete(int arr[], int size, int ){
+    
+}
+```

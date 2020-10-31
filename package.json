@@ -1,7 +1,7 @@
 {
   "name": "CS20",
   "version": "0.0.1",
-  "description": "We love CS 20",
+  "description": "Welcome to, CS 20",
   "main": "index.js",
   "authors": {
     "name": "HASAN",
@@ -14,10 +14,13 @@
   },
   "license": "MIT",
   "devDependencies": {
+    "@vuepress/plugin-pwa": "^1.7.1",
     "vuepress": "^1.5.3"
   },
   "dependencies": {
+    "@fortawesome/fontawesome-free": "^5.15.1",
     "bootstrap": "^5.0.0-alpha2",
+    "fontawesome": "^5.6.3",
     "popper.js": "^1.16.1"
   }
 }
