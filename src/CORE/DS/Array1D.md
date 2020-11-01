@@ -2,12 +2,34 @@
 Array is collection of item stored at contiguous memory locations. Array store multiple items of same type togeather in computer memory.
 ![](https://media.geeksforgeeks.org/wp-content/uploads/array-2.png)
 
+
+## Array initialization
+Like any simple variable, an array can be initalized while it is being declared.
+``` cpp
+int arr[] = {10,20,30,4,0}; //size not given
+int arr[5] = {0,1,2,3,4}; // size is given
+```
+
+### partial initialization
+
+In partial initialization all components doesn't need to be initialized.
+
+``` cpp
+int list [10] = { 0 } ;
+int list [10] = { 3, 4 ,5 };
+```
+
 ## Array Memory
 
-Array stores items in a contiguous manner. Let's declare an array of size 5. Let's understand it's memory locations.
+Array stores items in a contiguous manner. A one-dimentional array is an array in which the components are arranged in a list form.
+
+The general form for declaring a one-dimensional array is:
 
 <mark>**type**</mark> name[SIZE];<br>
 <mark>**int**</mark> arr[5]; // declaring array that stores 5 integer
+
+The statement <mark>int mark[5</mark> declares an array num of five components.
+
 ::: tip
 **this Array has 5 element but, here indexing starts from 0 and ends in size -1 or 4.**
 :::
@@ -40,21 +62,70 @@ Suppose you want to find memory location for array index 3.
                   = 200 + 4 x1 <br>
 **LOCATION of array index 1 = 204**
 :::
-## Array Traverse
-Tranversing an array size of n.
+
+
+## Array Access
+General form of accessing an array component is:
+
+arrayName[index];
+
+Index is a non-negetive integer and it specifies the position of the component in the array.
+
+
+**Some of the basic operation performed on a one-dimensional array:** initialization, input data, outputing data stored in an array.
+
+**1. Initiating arr[n]:**
+
 ``` cpp
-void traverse(int arr[], int size)
+for(int i=0; i < n-1; i++) // n= number of element
+     arr[i] = 0;
+```
+**2. Reading data into an array:**
+``` cpp
+void input_Array(int arr[], int size)
 {
     for(int i=0; i < size -1 ; i++) // index start from i=0 
-        cout << arr[i]; // accessing value from [i] th index from array
+        cin >> arr[i]; // accessing value from [i] th index from array
 }
 ```
-::: warning Time complexity
 
-Time complexity of following program is <br>
-**Best case:** O(1) // array size 1 <br>
-**Worst case:** O(N) 
-:::
+**3. Print an Array:**
+
+``` cpp
+void print_Array(int arr[], int size)
+{
+    for(int i=0; i < size -1 ; i++) // index start from i=0 
+        cout << > arr[i] << " "; // accessing value from [i] th index from array
+}
+```
+**4. sum of an array:**
+``` cpp
+int sum_Array(int arr[], int size)
+{
+    int sum =0;
+    for( int i=0; i <  size -1; i++ )
+        sum += arr[i]; // sum = sum + arr[i]
+    return sum;
+}
+```
+**5. Largest element in the array:**
+``` cpp
+int largest_array_Index(int arr[], int size)
+{
+    int max = 0;
+    for(int i = 0; i < size -1 ; i++)
+        if( arr[max] < arr[i] ) // if max value is smaller then i element
+            max = i; // then max will the i element
+    return max; // maxvalue would be arr[max]
+}
+```
+
+**6. Copy an array:**
+
+``` cpp
+int copy_Array ( int copy[] , int size, int paste[], int n , int elemen )
+```
+
 ## Array Insertion
 Inserting an element into array.
 ``` cpp
@@ -144,3 +215,4 @@ Time complexity of the following program is <br>
 **Best case:** O(1) // found from the middle index<br>
 **Worst case:** O(log2(n)) 
 :::
+
