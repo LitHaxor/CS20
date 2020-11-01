@@ -13,11 +13,11 @@ Data is a collection of raw and unorganized facts that has no meaning. Genarally
 
 
 When data is proccessed and It has a meaing to it, then we call it informission.</br>
-Suppose, my name is **"ASHNA"** in raw unproccessed, It is not meaningful.</br>
-But, when we proccess the raw data it gives **"Hasan"** which has a meaning . 
+Suppose, someones name is **"VIDED"** in raw unproccessed form. We cannot extract meanning from it.</br>
+But, when we proccess the raw data it gives **"DEVID"** which is  a meanningful name. 
 
-- Information is set of data that are proccessed.
-- Information is meaningful and uselful.
+- Informations are set of data that are processed.
+- Informations are meaningful , useful.
 - Data is proccessed according to requirement and become information.
 
 ![Data](https://www.guru99.com/images/1/053018_0710_Differenceb1.png)

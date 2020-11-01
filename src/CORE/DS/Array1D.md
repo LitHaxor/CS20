@@ -118,9 +118,29 @@ Time complexity of following program is <br>
 **Worst case:** O(N) 
 :::
 - **Binary Search:** if array is sorted then, we can get index value by comparing key value with the middle value.
-``` cpp
-int BinarySearch(int arr[], int key,int start, int end)
-{
 
+
+``` cpp
+int BinarySearch(int arr[], int key, int low, int high)
+{
+    while(start<end)
+    {
+        if(high < low) // high value/size value cannot be smaller than low value
+            return -1; // return -1 denotes not found
+        int mid = low + (high-low) /2; // Finding the middle index 
+        if( arr[mid] < key) // if key is bigger than mid value 
+            low = mid +1; // then we can drop smaller values
+        if( arr[mid] > key) // if key is smaller than mid value
+            high = mid -1; // then we can drop bigger values 
+        if( arr[mid] == key) //if found 
+            return i; // return index
+    }
+    
 }
 ```
+::: warning Time complexity
+
+Time complexity of the following program is <br>
+**Best case:** O(1) // found from the middle index<br>
+**Worst case:** O(log2(n)) 
+:::

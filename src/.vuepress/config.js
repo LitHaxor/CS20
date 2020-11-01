@@ -71,6 +71,8 @@ module.exports = {
             'Operations',
             'DataStorage',
             'Array1D',
+            'Array2D',
+            'String'
           ]
         }
       ],
