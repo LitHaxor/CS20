@@ -1,36 +1,248 @@
 ---
 home: true
-heroText: 
-heroImage: Hero.png
-actionText: 🎆 Contribute →
-actionLink:  https://github.com/LitHaxor/CS20/
-footer:  CS 20-en (C) 2020
----
-<h2 id="Core"> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-braces" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z"/>
-</svg> CS20 CORE </h2>
-<hr>
-<button class="btn btn-outline-primary" onclick="window.location.href='/CORE/IPL/'">101 Introduction to Programming C++ → </button> 
-<button class="btn btn-outline-primary" onclick="window.location.href='/CORE/OOP/'">102 Object Oriented Programming JAVA →</button>  
-<button class="btn btn-outline-primary" onclick="window.location.href='/CORE/DS/'">103 Data Structure →</button>
-<button class="btn btn-outline-primary" onclick="window.location.href='/CORE/ALGO/'">104 Algorithm →</button>
-<button class="btn btn-outline-primary" onclick="window.location.href='/CORE/DS/'">105 OOP Advance →</button>
-<hr>
-<h2> <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-code-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path fill-rule="evenodd" d="M4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0zm6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0zm-.999-3.124a.5.5 0 0 1 .33.625l-4 13a.5.5 0 0 1-.955-.294l4-13a.5.5 0 0 1 .625-.33z"/>
-</svg> CS20 WEB </h2>
-<h4>Basic</h4>
-<button class="btn btn-outline-success" onclick="window.location.href='/WEB/HTML/'">201 Introduction to HTML → </button> 
-<button class="btn btn-outline-success" onclick="window.location.href='/WEB/CSS/'">202 Introduction to CSS → </button>  
-<button class="btn btn-outline-success" onclick="window.location.href='/WEB/JS/'">203 Introduction to JavaScript →</button>
-<h4>Framework</h4>
-<button class="btn btn-outline-success" onclick="window.location.href='/WEB/Boot/'">211 Bootstrap →</button>
-<button class="btn btn-outline-success" onclick="window.location.href='/WEB/Node/'">212 Node.js →</button>
-<button class="btn btn-outline-success" onclick="window.location.href='/WEB/JS/'">213 ReactJS →</button>
-<button class="btn btn-outline-success" onclick="window.location.href='/WEB/JS/'">214 Express →</button>
-<hr>
-<h2><svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-hammer" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-  <path d="M9.812 1.952a.5.5 0 0 1-.312.89c-1.671 0-2.852.596-3.616 1.185L4.857 5.073V6.21a.5.5 0 0 1-.146.354L3.425 7.853a.5.5 0 0 1-.708 0L.146 5.274a.5.5 0 0 1 0-.706l1.286-1.29a.5.5 0 0 1 .354-.146H2.84C4.505 1.228 6.216.862 7.557 1.04a5.009 5.009 0 0 1 2.077.782l.178.129z"/>
-  <path fill-rule="evenodd" d="M6.012 3.5a.5.5 0 0 1 .359.165l9.146 8.646A.5.5 0 0 1 15.5 13L14 14.5a.5.5 0 0 1-.756-.056L4.598 5.297a.5.5 0 0 1 .048-.65l1-1a.5.5 0 0 1 .366-.147z"/>
-</svg> CS20 DEV</h2>
 
+---
+ <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+<style>
+  body {
+  margin: 0;
+  font: 14px sans-serif;
+}
+.header {
+  background: #26699a;
+  height: 60px;
+  position: relative;
+}
+.header .logo {
+  position: absolute;
+  left: 16px;
+}
+.header h1 {
+  margin: 0;
+  padding: 14px 0;
+  color: #f0f6fb;
+}
+.header .buttons.right {
+  position: absolute;
+  right: 16px;
+  top: 22px;
+}
+.header .buttons a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 10px;
+}
+div {
+  box-sizing: border-box;
+}
+h1.title {
+  font-weight: 300;
+  margin: 30px auto;
+  text-align: center;
+}
+h2 {
+  font-weight: 300;
+  margin: 10px auto 30px auto;
+  text-align: center;
+}
+.tools {
+  width: 100%;
+  padding: 30px;
+  background: #edf0f1;
+  margin-bottom: 1px;
+}
+.tools.blocks a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 100px;
+  height: 90px;
+  position: relative;
+  margin: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 3px;
+}
+.tools.blocks a span {
+  font-size: 14px;
+  text-align: center;
+  display: block;
+  bottom: 12px;
+  position: absolute;
+  width: 100%;
+  color: #535557;
+}
+.tools.blocks a i {
+  position: absolute;
+  top: 12px;
+  width: 100%;
+  text-align: center;
+  font-size: 30px;
+  color: #a8adb1;
+}
+.tools.blocks a.obstacle span {
+  bottom: 9px;
+  font-size: 12px;
+}
+.tools.blocks a:hover {
+  background: #fff;
+  border-color: #dadedf;
+}
+.tools.blocks a:hover span {
+  color: #0fa1ca;
+}
+.tools.blocks a:hover i {
+  color: #0fa1ca;
+}
+.tools.large-blocks a {
+  display: inline-block;
+  box-sizing: border-box;
+  width: 240px;
+  height: 90px;
+  position: relative;
+  margin: 2px;
+  border: 1px solid transparent;
+  cursor: pointer;
+  border-radius: 3px;
+  background: #fff;
+  border-color: #dadedf;
+}
+.tools.large-blocks a span {
+  font-size: 14px;
+  display: block;
+  top: 18px;
+  left: 80px;
+  position: absolute;
+  width: 150px;
+  color: #535557;
+}
+.tools.large-blocks a p {
+  color: #a8adb1;
+  font-size: 12px;
+  left: 80px;
+  top: 28px;
+  position: absolute;
+  padding-right: 10px;
+}
+.tools.large-blocks a i {
+  position: absolute;
+  left: 16px;
+  line-height: 88px;
+  width: 50px;
+  text-align: center;
+  font-size: 24px;
+  color: #dbe4ec;
+  z-index: 5;
+}
+.tools.large-blocks a .circle {
+  width: 50px;
+  height: 50px;
+  display: block;
+  content: '';
+  background: #26699a;
+  border-radius: 50%;
+  position: absolute;
+  top: 20px;
+  left: 16px;
+}
+.tools.large-blocks a:hover {
+  background: #f0f6fb;
+  border-color: #dbe4ec;
+}
+.tools.large-blocks a:hover * {
+  color: #0fa1ca;
+}
+.tools.large-blocks a:hover .circle {
+  background: #dbe4ec;
+}
+.tools.large-blocks a.procedures i {
+  line-height: 92px;
+}
+
+</style>
+
+  <div class="tools blocks">
+                <h2>Application Tools</h2>
+                <a href="https://www.aiub.edu/category/notices">
+                    <i class="fa fa-exclamation"></i>
+                    <span>Notices</span>
+                </a>
+                <a href="data-manager">
+                    <i class="fa fa-user"></i>
+                    <span>Portal</span>
+                </a>
+                <a ui-sref="notam-search">
+                    <i class="fa fa-calculator"></i>
+                    <span>CGPA Calculator</span>
+                </a>
+                <a ng-href="/#/chart-manager">
+                    <i class="fa fa-map-o"></i>
+                    <span>Contacts</span>
+                </a>
+                <a ng-href="/#/terminal-procedures">
+                    <i class="fa fa-plane"></i>
+                    <span>Procedure</span>
+                </a>
+                <a ng-href="/#/customer-profile">
+                    <i class="fa fa-user"></i>
+                    <span>Customer</span>
+                </a>
+                <a ng-href="/#/airport-surveillance">
+                    <i class="fa fa-binoculars"></i>
+                    <span>Surveilliance</span>
+                </a>
+                <a class="obstacle" ng-href="/#/obstacle/upload">
+                    <i class="fa fa-tree"></i>
+                    <span>Obstacle Uploader</span>
+                </a>
+    </div>
+     <div class="tools large-blocks"> 
+                <h2>Computer Science</h2>
+                <a href="/CORE/IPL/">
+                    <i class="fa fa-search"></i>
+                    <div class="circle"></div>
+                    <span>IPL CS 4001</span>
+                    <p>Introductory course for the student who studying Computer science.</p>
+                </a>
+                <a ui-sref="data-manager">
+                    <i class="fa fa-thumbs-o-up"></i>
+                    <div class="circle"></div>
+                    <span>Data Structure</span>
+                    <p>Learn data structure </p>
+                </a>
+                <a ui-sref="notam-search">
+                    <i class="fa fa-exclamation-triangle"></i>
+                    <div class="circle"></div>
+                    <span>NOTAM Manager</span>
+                    <p>View and apply digital NOTAMs.</p>
+                </a>
+                <a ng-href="/#/chart-manager">
+                    <i class="fa fa-map-o"></i>
+                    <div class="circle"></div>
+                    <span>Chart Manager</span>
+                    <p>Create and manage chart exports.</p>
+                </a>
+                <a class="procedures" ng-href="/#/terminal-procedures">
+                    <i class="fa fa-plane"></i>
+                    <div class="circle"></div>
+                    <span>Terminal Procedures</span>
+                    <p>Create and manage procedures.</p>
+                </a>
+                <a ng-href="/#/customer-profile">
+                    <i class="fa fa-user"></i>
+                    <div class="circle"></div>
+                    <span>Customer Profiles</span>
+                    <p>Manage customer and aircraft profiles.</p>
+                </a>
+                <a ng-href="/#/airport-surveillance">
+                    <i class="fa fa-binoculars"></i>
+                    <div class="circle"></div>
+                    <span>Airport Surveilliance</span>
+                    <p>Manage airport surveilliance list.</p>
+                </a>
+                <a class="obstacle" ng-href="/#/obstacle/upload">
+                    <i class="fa fa-tree"></i>
+                    <div class="circle"></div>
+                    <span>Obstacle Uploader</span>
+                    <p>Use web-based upload tool for obstacles.</p>
+                </a>
+      </div>
