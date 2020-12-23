@@ -31,7 +31,7 @@ Maximum size of the data structure is allocated on compile time. Therefore, we c
 
 **Example:** Array is a static data structure.
 ## Dynamic Data Structure
-Maximum size of the data structure is allocated on run time. Therefore, we can change the size.
+Maximum size of the data structure is allocated on run time. Therefore, memory is allocated when size is changed.
 - Size is flexiable.
 - Memory allocated in run time.
 

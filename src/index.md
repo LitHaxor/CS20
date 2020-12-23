@@ -2,7 +2,7 @@
 home: true
 
 ---
- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css">
 <style>
   body {
   margin: 0;
@@ -54,7 +54,7 @@ h2 {
 .tools.blocks a {
   display: inline-block;
   box-sizing: border-box;
-  width: 100px;
+  width: 90px;
   height: 90px;
   position: relative;
   margin: 2px;
@@ -77,27 +77,27 @@ h2 {
   width: 100%;
   text-align: center;
   font-size: 30px;
-  color: #a8adb1;
+  color: #000;
 }
 .tools.blocks a.obstacle span {
   bottom: 9px;
   font-size: 12px;
 }
 .tools.blocks a:hover {
-  background: #fff;
-  border-color: #dadedf;
+  background: #000;
+  border-color: #000;
 }
 .tools.blocks a:hover span {
-  color: #0fa1ca;
+  color: #fff;
 }
 .tools.blocks a:hover i {
-  color: #0fa1ca;
+  color: #fff;
 }
 .tools.large-blocks a {
-  display: inline-block;
+  display: inline-grid;
   box-sizing: border-box;
-  width: 240px;
-  height: 90px;
+  width: 100%;
+  height: 110px;
   position: relative;
   margin: 2px;
   border: 1px solid transparent;
@@ -138,21 +138,21 @@ h2 {
   height: 50px;
   display: block;
   content: '';
-  background: #26699a;
+  background: #000;
   border-radius: 50%;
   position: absolute;
   top: 20px;
   left: 16px;
 }
 .tools.large-blocks a:hover {
-  background: #f0f6fb;
-  border-color: #dbe4ec;
+  background: #000;
+  border-color: #000;
 }
 .tools.large-blocks a:hover * {
-  color: #0fa1ca;
+  color: #fff;
 }
 .tools.large-blocks a:hover .circle {
-  background: #dbe4ec;
+  background: #696969;
 }
 .tools.large-blocks a.procedures i {
   line-height: 92px;
@@ -175,74 +175,70 @@ h2 {
                     <span>CGPA Calculator</span>
                 </a>
                 <a ng-href="/#/chart-manager">
-                    <i class="fa fa-map-o"></i>
-                    <span>Contacts</span>
+                    <i class="fas fa-chalkboard-teacher"></i>
+                    <span>Courses</span>
                 </a>
                 <a ng-href="/#/terminal-procedures">
-                    <i class="fa fa-plane"></i>
-                    <span>Procedure</span>
+                    <i class="fas fa-school"></i>
+                    <span>AIUB HOME page</span>
                 </a>
                 <a ng-href="/#/customer-profile">
-                    <i class="fa fa-user"></i>
-                    <span>Customer</span>
+                    <i class="fas fa-book"></i>
+                    <span>Books</span>
                 </a>
                 <a ng-href="/#/airport-surveillance">
-                    <i class="fa fa-binoculars"></i>
-                    <span>Surveilliance</span>
-                </a>
-                <a class="obstacle" ng-href="/#/obstacle/upload">
-                    <i class="fa fa-tree"></i>
-                    <span>Obstacle Uploader</span>
+                    <i class="fas fa-download"></i>
+                    <span>Softwares</span>
                 </a>
     </div>
      <div class="tools large-blocks"> 
                 <h2>Computer Science</h2>
                 <a href="/CORE/IPL/">
-                    <i class="fa fa-search"></i>
+                    <i class="fa fa-file-code"></i>
                     <div class="circle"></div>
                     <span>IPL CS 4001</span>
-                    <p>Introductory course for the student who studying Computer science.</p>
+                    <p><br>Introduction to Programming Language.</p>
                 </a>
-                <a ui-sref="data-manager">
-                    <i class="fa fa-thumbs-o-up"></i>
+                 <a ng-href="/CORE/DM/">
+                    <i class="fas fa-not-equal"></i>
+                    <div class="circle"></div>
+                    <span>Descrete Math</span>
+                    <p><br>Fundamental maths for CS. Requires CS 4001</p>
+                </a>
+                 <a ng-href="/CORE/OOP-1/">
+                    <i class="fas fa-coffee"></i>
+                    <div class="circle"></div>
+                    <span>OOP-1</span> 
+                    <p><br>Object Oriented programming with JAVA.</p>
+                </a>
+                <a href="/CORE/DS/">
+                    <i class="fab fa-stack-overflow"></i>
                     <div class="circle"></div>
                     <span>Data Structure</span>
-                    <p>Learn data structure </p>
+                    <p><br>Learn Data structure </p>
                 </a>
-                <a ui-sref="notam-search">
-                    <i class="fa fa-exclamation-triangle"></i>
+                <a ui-sref="/CORE/Algo/">
+                    <i class="fa fa-sitemap"></i>
                     <div class="circle"></div>
-                    <span>NOTAM Manager</span>
-                    <p>View and apply digital NOTAMs.</p>
+                    <span>Algorithm</span>
+                    <p><br> Application and implimentation of Algorithm</p>
                 </a>
-                <a ng-href="/#/chart-manager">
-                    <i class="fa fa-map-o"></i>
+                <a class="procedures" ng-href="/CORE/Data-Base/">
+                    <i class="fas fa-database"></i>
                     <div class="circle"></div>
-                    <span>Chart Manager</span>
-                    <p>Create and manage chart exports.</p>
+                    <span>Intro to Database </span>
+                    <p><br>Manage database, SQL,mySQL</p>
                 </a>
-                <a class="procedures" ng-href="/#/terminal-procedures">
-                    <i class="fa fa-plane"></i>
+                <a ng-href="/CORE/C-sharp/">
+                    <i class="fa fa-hashtag"></i>
                     <div class="circle"></div>
-                    <span>Terminal Procedures</span>
-                    <p>Create and manage procedures.</p>
-                </a>
-                <a ng-href="/#/customer-profile">
-                    <i class="fa fa-user"></i>
-                    <div class="circle"></div>
-                    <span>Customer Profiles</span>
-                    <p>Manage customer and aircraft profiles.</p>
-                </a>
-                <a ng-href="/#/airport-surveillance">
-                    <i class="fa fa-binoculars"></i>
-                    <div class="circle"></div>
-                    <span>Airport Surveilliance</span>
-                    <p>Manage airport surveilliance list.</p>
+                    <span>OOP-2</span>
+                    <p><br> Intro to C#. Require </p>
                 </a>
                 <a class="obstacle" ng-href="/#/obstacle/upload">
-                    <i class="fa fa-tree"></i>
+                    <i class="fab fa-internet-explorer"></i>
                     <div class="circle"></div>
-                    <span>Obstacle Uploader</span>
-                    <p>Use web-based upload tool for obstacles.</p>
+                    <span>Webtech</span>
+                    <p><br> Frontend HTML, CSS, JS and backend PHP.</p>
                 </a>
       </div>

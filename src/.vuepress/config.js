@@ -58,7 +58,8 @@ module.exports = {
         items: [
           { text: 'Data Structure', link: '/CORE/DS/'}
         ]
-      }
+      },
+      
     ],
     sidebar: {
       '/CORE/DS/': [
@@ -72,10 +73,23 @@ module.exports = {
             'DataStorage',
             'Array1D',
             'Array2D',
-            'String'
+            'String',
+            'linkedList'
           ]
         }
       ],
+      '/CORE/POA/': [
+        {
+          title : 'Principle of Accounting',
+          collapsable: false,
+          children : [
+            '',
+            'chapter6',
+            'chapter10'
+          ]
+        }
+
+      ]
     }
   },
 
